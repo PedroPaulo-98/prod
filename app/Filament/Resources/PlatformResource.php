@@ -17,6 +17,9 @@ class PlatformResource extends Resource
 {
     protected static ?string $model = Platform::class;
 
+    protected static ?string $navigationGroup = 'Checklist'; 
+
+
     protected static ?string $navigationLabel = 'Plataforma de Acompanhamento'; // Altera o texto no menu
     protected static ?string $modelLabel = 'Plataforma de Acompanhamento'; // Para uso singular
     protected static ?string $pluralModelLabel = 'Plataformas de Acompanhamento'; // Para uso plural

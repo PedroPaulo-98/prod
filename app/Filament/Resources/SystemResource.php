@@ -37,8 +37,6 @@ class SystemResource extends Resource
                     ->maxLength(100),
                 Forms\Components\TextInput::make('url')
                     ->label('URL')
-                    ->prefix('https://')
-                    ->suffix('.com')
                     ->required()
                     ->maxLength(100),
             ]);

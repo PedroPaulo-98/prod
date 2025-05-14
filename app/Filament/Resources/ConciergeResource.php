@@ -19,6 +19,14 @@ class ConciergeResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+    protected static ?string $navigationGroup = 'Portaria'; 
+
+
+    
+    protected static ?string $navigationLabel = 'Portaria'; // Altera o texto no menu
+    protected static ?string $modelLabel = 'Portaria'; // Para uso singular
+    protected static ?string $pluralModelLabel = 'Portaria'; // Para uso plural
+
     public static function form(Form $form): Form
     {
         return $form
@@ -67,9 +75,9 @@ class ConciergeResource extends Resource
                 Tables\Actions\EditAction::make(),
             ])
             ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
-                ]),
+                //Tables\Actions\BulkActionGroup::make([
+                    //Tables\Actions\DeleteBulkAction::make(),
+                //]),
             ]);
     }
 

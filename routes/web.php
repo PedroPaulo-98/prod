@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PagesController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 //Route::get('/dashboard', function () {
 //    return view('dashboard');
@@ -27,5 +29,12 @@ Route::get('/', function () {
 //    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
 //    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 //});
+
+Route::get('/', [PagesController::class, 'home'])->name('page.home');
+Route::get('/sobre', [PagesController::class, 'about'])->name('page.about');
+Route::get('/boletim', [PagesController::class, 'bulletim'])->name('page.bulletim');
+Route::get('/missoes', [PagesController::class, 'mission'])->name('page.mission');
+Route::get('/ministerios', [PagesController::class, 'ministry'])->name('page.ministry');
+Route::get('/contatos', [PagesController::class, 'contact'])->name('page.contact');
 
 require __DIR__.'/auth.php';

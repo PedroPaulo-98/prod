@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Models;
+use Illuminate\Support\Str;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -27,4 +28,14 @@ class Entry extends Model
     {
         return $this->belongsTo(Concierge::class);
     }
+    public function getPhotoUrlAttribute()
+{
+    if (empty($this->photo)) {
+        return null;
+    }
+    
+    return Str::startsWith($this->photo, 'data:image') 
+        ? $this->photo 
+        : asset('storage/' . $this->photo);
+}
 }

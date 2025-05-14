@@ -17,6 +17,9 @@ class ProviderResource extends Resource
 {
     protected static ?string $model = Provider::class;
 
+    protected static ?string $navigationGroup = 'Checklist'; 
+
+
     protected static ?string $navigationLabel = 'Provedor'; // Altera o texto no menu
     protected static ?string $modelLabel = 'Provedor'; // Para uso singular
     protected static ?string $pluralModelLabel = 'Provedores'; // Para uso plural

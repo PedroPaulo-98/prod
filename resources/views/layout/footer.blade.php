@@ -1,0 +1,10 @@
+<script src="/pages/lib/jquery/jquery.min.js"></script>
+<script src="/pages/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/pages/lib/jquery.easing/jquery.easing.min.js"></script>
+<script src="/pages/lib/owl.carousel/owl.carousel.min.js"></script>
+<script src="/pages/lib/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="/pages/lib/venobox/venobox.min.js"></script>
+<script src="/pages/lib/waypoints/jquery.waypoints.min.js"></script>
+<script src="/pages/lib/counterup/counterup.min.js"></script>
+<script src="/pages/lib/aos/aos.js"></script>
+<script src="/pages/lib/jQueryMask1.14.15/jquery.mask.min.js"></script>
